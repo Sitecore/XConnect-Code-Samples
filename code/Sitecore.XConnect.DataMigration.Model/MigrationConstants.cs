@@ -8,6 +8,6 @@ namespace Sitecore.XConnect.DataMigration.Source.Model
         // explicitly for the contact via AddContactIdentifierOperation, so we need to keep the reference
         // between target and source XConnect data.
         // 'AliasOld' identifier on the target XConnect contains 'Alias' contact identifier value from the source XConnect.
-        public static readonly string AliasOldSourceIdentifier => "AliasOld";
+        public const string AliasOldSourceIdentifier = "AliasOld";
     }
 }
