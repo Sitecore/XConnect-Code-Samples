@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <Target Name="CopyOutput" AfterTargets="AfterBuild">
+    <ItemGroup>
+      <MigrationSourceFiles Include="$(ProjectDir)..\Sitecore.XConnect.DataMigration.Source\bin\$(Configuration)\net48\*.*" />
+    </ItemGroup>
+    <Copy SourceFiles="@(MigrationSourceFiles)" DestinationFolder="$(OutDir)Source" />
+  </Target>
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="3.1.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="4.1.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.XConnect.DataMigration\Sitecore.XConnect.DataMigration.csproj" PrivateAssets="All" />
+  </ItemGroup>
+</Project>

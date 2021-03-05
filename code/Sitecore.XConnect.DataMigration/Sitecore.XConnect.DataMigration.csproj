@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.XConnect.DataMigration.Model\Sitecore.XConnect.DataMigration.Source.Model.csproj" />
+    <ProjectReference Include="..\Sitecore.XConnect.DataMigration.Target\Sitecore.XConnect.DataMigration.Target.csproj" />
+  </ItemGroup>
+
+</Project>
