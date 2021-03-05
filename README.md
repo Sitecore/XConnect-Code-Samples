@@ -483,7 +483,3 @@ The data migration in the code sample can be run multiple times in case there ar
 The contact data extraction returns all the data and it cannot filter data that has been already migrated, so the list of contacts that is already merged will be extracted, but they will not be duplicated in the target instance.
 The alias identifier, which is migrated together with the contact as `AliasOld` identifier, prevents duplicates. The 'AlreadyExist' failure will be traced if the tool tries to submit a contact that has been migrated already.
 
-
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better.
-TODO: Will be completed later

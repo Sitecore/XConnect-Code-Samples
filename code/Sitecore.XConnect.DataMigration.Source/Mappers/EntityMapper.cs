@@ -107,7 +107,7 @@ namespace Sitecore.XConnect.DataMigration.Source.Mappers
                 {
                     CampaignId = interaction.CampaignId,
                     ChannelId = interaction.ChannelId,
-                    //DeviceProfile = interaction.DeviceProfile, // As far as DeviceProfiles are not migrated them can be null
+                    //DeviceProfile = interaction.DeviceProfile, // As far as DeviceProfiles are not migrated they can be null
                     EngagementValue = interaction.EngagementValue,
                     StartDateTime = interaction.StartDateTime,
                     EndDateTime = interaction.EndDateTime,
