@@ -5,6 +5,3 @@ bin
 obj
 packages
 *.v2
-code/NuGet.Config
-code/.vs/Sitecore.XConnect.DataMigration/v16/TestStore/0/000.testlog
-code/.vs/Sitecore.XConnect.DataMigration/v16/TestStore/0/testlog.manifest
