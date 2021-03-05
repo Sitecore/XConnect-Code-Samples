@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Mappers\**" />
+    <EmbeddedResource Remove="Mappers\**" />
+    <None Remove="Mappers\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="Mappers\EntityMapper.cs" />
+    <Compile Include="Mappers\FacetMapperRegistry.cs" />
+    <Compile Include="Mappers\EventMapperRegistry.cs" />
+    <Compile Include="Mappers\Events\BaseEventMapper.cs" />
+    <Compile Include="Mappers\Events\CampaignEventMapper.cs" />
+    <Compile Include="Mappers\Events\BaseEmailEventMapper.cs" />
+    <Compile Include="Mappers\Events\EmailOpenedEventMapper.cs" />
+    <Compile Include="Mappers\Events\UnsubscribedFromEmailEventMapper.cs" />
+    <Compile Include="Mappers\Events\SpamComplaintEventMapper.cs" />
+    <Compile Include="Mappers\Events\EmailSentEventMapper.cs" />
+    <Compile Include="Mappers\Events\EmailClickedEventMapper.cs" />
+    <Compile Include="Mappers\Events\DownloadEventMapper.cs" />
+    <Compile Include="Mappers\Events\EventMapper.cs" />
+    <Compile Include="Mappers\Events\GoalMapper.cs" />
+    <Compile Include="Mappers\Events\IEventMapper.cs" />
+    <Compile Include="Mappers\Events\PersonalizationEventMapper.cs" />
+    <Compile Include="Mappers\Events\OutcomeMapper.cs" />
+    <Compile Include="Mappers\Events\MVTestTriggeredEventMapper.cs" />
+    <Compile Include="Mappers\Events\BounceEventMapper.cs" />
+    <Compile Include="Mappers\Events\DispatchFailedEventMapper.cs" />
+    <Compile Include="Mappers\Events\EmailEventMapper.cs" />
+    <Compile Include="Mappers\Events\SearchEventMapper.cs" />
+    <Compile Include="Mappers\Events\PageViewEventMapper.cs" />
+    <Compile Include="Mappers\Facets\BaseFacetMapper.cs" />
+    <Compile Include="Mappers\Facets\EmailAddressHistoryFacetMapper.cs" />
+    <Compile Include="Mappers\Facets\ConsentInformationFacetMapper.cs" />
+    <Compile Include="Mappers\Facets\IFacetMapper.cs" />
+    <Compile Include="Mappers\Filters\ContactFilters\AnonymousContactFilter.cs" />
+    <Compile Include="Mappers\Filters\ContactFilterManager.cs" />
+    <Compile Include="Mappers\Filters\ContactFilters\ForgottenContactFilter.cs" />
+    <Compile Include="Mappers\Filters\ContactFilters\IContactFilter.cs" />
+    <Compile Include="Mappers\Filters\ContactFilters\MergedContactFilter.cs" />
+    <Compile Include="Mappers\Filters\ContactIdentifierFilterManager.cs" />
+    <Compile Include="Mappers\Filters\IContactIdentifierFilterManager.cs" />
+    <Compile Include="Mappers\Filters\IdentifierFilters\IContactIdentifierFilter.cs" />
+    <Compile Include="Mappers\Filters\IContactFilterManager.cs" />
+    <Compile Include="Mappers\Filters\IdentifierFilters\MergeIdentifierFilter.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Sitecore.ContentTesting.Model.xConnect" Version="9.3.0" />
+    <PackageReference Include="Sitecore.EmailCampaign.Model" Version="9.3.0" />
+    <PackageReference Include="Sitecore.XConnect.Client" Version="9.3.0" />
+    <PackageReference Include="Sitecore.XConnect.Collection.Model" Version="9.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.XConnect.DataMigration.Model\Sitecore.XConnect.DataMigration.Source.Model.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="App.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.XConnect.DataMigration.Source.Model", "Sitecore.XConnect.DataMigration.Model\Sitecore.XConnect.DataMigration.Source.Model.csproj", "{E3700B9A-D799-4741-BC98-221506F6D409}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.XConnect.DataMigration.Source", "Sitecore.XConnect.DataMigration.Source\Sitecore.XConnect.DataMigration.Source.csproj", "{B11A193F-EF35-437D-9345-1C61D0256763}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.XConnect.DataMigration.Target", "Sitecore.XConnect.DataMigration.Target\Sitecore.XConnect.DataMigration.Target.csproj", "{8BC09C9F-6819-4E5C-AD0F-24A9B1659E5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.XConnect.DataMigration.Tool", "Sitecore.XConnect.DataMigration.Tool\Sitecore.XConnect.DataMigration.Tool.csproj", "{DC8DFBC3-FAFE-4DD0-9A67-0A3B64BF707E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Sitecore.XConnect.DataMigration", "Sitecore.XConnect.DataMigration\Sitecore.XConnect.DataMigration.csproj", "{12102A9E-924C-4632-BB37-862754A4DF01}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3217C7DD-E890-45B0-A66E-8E94F4AB49FE}"
+	ProjectSection(SolutionItems) = preProject
+		nuget.config = nuget.config
+		..\README.md = ..\README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E3700B9A-D799-4741-BC98-221506F6D409}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3700B9A-D799-4741-BC98-221506F6D409}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3700B9A-D799-4741-BC98-221506F6D409}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3700B9A-D799-4741-BC98-221506F6D409}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B11A193F-EF35-437D-9345-1C61D0256763}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B11A193F-EF35-437D-9345-1C61D0256763}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B11A193F-EF35-437D-9345-1C61D0256763}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B11A193F-EF35-437D-9345-1C61D0256763}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC09C9F-6819-4E5C-AD0F-24A9B1659E5F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC09C9F-6819-4E5C-AD0F-24A9B1659E5F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC09C9F-6819-4E5C-AD0F-24A9B1659E5F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC09C9F-6819-4E5C-AD0F-24A9B1659E5F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8DFBC3-FAFE-4DD0-9A67-0A3B64BF707E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8DFBC3-FAFE-4DD0-9A67-0A3B64BF707E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8DFBC3-FAFE-4DD0-9A67-0A3B64BF707E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8DFBC3-FAFE-4DD0-9A67-0A3B64BF707E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12102A9E-924C-4632-BB37-862754A4DF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12102A9E-924C-4632-BB37-862754A4DF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12102A9E-924C-4632-BB37-862754A4DF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12102A9E-924C-4632-BB37-862754A4DF01}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C83A9A40-B673-45E6-92E2-BECD22C85911}
+	EndGlobalSection
+EndGlobal

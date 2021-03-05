@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Serilog" Version="2.10.0" />
+    <PackageReference Include="Sitecore.ContentTesting.Model.xConnect" Version="10.1.0" />
+    <PackageReference Include="Sitecore.EmailCampaign.Model" Version="10.1.0" />
+    <PackageReference Include="Sitecore.XConnect.Client" Version="10.1.0" />
+    <PackageReference Include="Sitecore.XConnect.Collection.Model" Version="10.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Sitecore.XConnect.DataMigration.Model\Sitecore.XConnect.DataMigration.Source.Model.csproj" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
